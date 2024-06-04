@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0!important;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(Assest/BackGround_image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #E50914;
+    border: 0;
+    outline: 0;
+    color: white;
+    padding: 7px 18px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+select{
+    margin: 0;
+    outline: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.lan-btn{
+    display: inline-flex;
+    background:transparent;
+    align-items: center;
+    border: white 1px solid;
+    padding: 6px 5px;
+    box-sizing: border-box;
+}
+
+.lan-btn img{
+    height: 20px;
+    margin: auto;
+}
+
+.header-con{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin-top: 70px;
+    transform: translate(-50%, -50%);
+}
+
+.header-con h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 750px;
+}
+
+.header-con p{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.email-sign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: max-content;
+}
+
+.email-sign input{
+    background: #00000066;
+    margin: 8px;
+    border: 1px solid white;
+    padding: 13px;
+    border-radius: 4px;
+    font-size: 110%;
+    color: white;
+    height: inherit;
+    width: 40%;
+}
+
+.email-sign input:hover{
+    background: #32323266;
+}
+
+.email-sign button{
+    background: #E50914;
+    box-sizing: border-box;
+    height: max-content;
+    margin: 10px;
+    border: 1px solid #E50914;
+    padding: 11px 20px;
+    border-radius: 4px;
+    font-size: 110%;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.email-sign button img{
+    height: 25px;
+    margin-left: 2px;
+}
+
+/* main */
+
+.feat{
+    padding: 50px 20px;
+    font-size: 22px;
+}
+
+.raw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 5%;
+    margin: auto;
+}
+
+.text-col{
+    display: inline;
+    width: 55%
+}
+
+.text-col h2{
+    margin: 4%;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 230%;
+}
+.text-col p{
+    margin: 4%;
+    margin-left: 10%;
+    font-size: 120%;
+}
+
+.img-col{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 45%;
+    margin: 2% 4%
+
+}
+.img-col img{
+    width: 87%;
+    margin: auto;
+
+}
+
+/* Frequently Asked Questions */
+.faq {
+    padding: 10px 2%;
+}
+
+.faq h2{
+    font-weight:900;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2%;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width:80%;
+
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 250;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    height: 5rem;
+}
+
+.accordian p{
+    font-size: 22px;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+.accordian .con{
+    background:rgb(45,45, 45);
+    text-align: left;
+    overflow: hidden;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s , padding 0.3s;
+}
+
+.accordian label:hover{
+    background-color: rgb(76, 76, 76);
+}
+
+.accordian input[type="radio"]:checked + label + .con{
+    max-height: max-content;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+.sign-in p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sign-in{
+    margin-bottom: 5%;
+}
+
+footer{
+    padding: 50px 13%;
+    color: #d9dad9;
+}
+
+footer h3{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.help{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 12px;
+    margin: 3% 0px;
+}
+
+.help .item a{
+    color: rgb(172, 172, 172); 
+    font-size: 90%;
+}
+.lang p{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 100;   
+}
+
+/* Responsive media Query */
+
+@media only screen and (max-width:600px) {
+
+    .header{
+        height: 95vh;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    button {
+        padding: 4px 10px;
+    }
+
+    nav .lan-btn {
+        padding: 4px 8px;
+    }
+    .header-con{
+        transform: none;
+        position: unset;
+        padding-top: 10%;
+    }
+
+    .header-con h1{
+        font-size: 35px;
+    }
+    .header-con p{
+        font-size: 17px;
+    }
+    .email-sign input{
+        width: 100%;
+        padding: 8px;
+    }
+
+    .feat{
+        padding: 5px;
+    }
+
+    .raw{
+        flex-wrap: wrap;
+        padding: 5px;
+        width: 100%;
+    }
+    .raweven{
+        flex-wrap: wrap-reverse;
+    }
+    .text-col{
+        width: 90%;
+    }
+    .text-col h2{
+        text-align: center;
+        font-size: 150%;
+    }
+    .text-col p{
+        font-size: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .img-col{
+        width: 98%;
+        margin: 7% 1%;
+    }
+    .img-col img{
+        width: 80%;
+    }
+
+    .faq h2{
+        font-size: 2rem;
+        margin: 5%;
+    }
+    .accordian
+    {
+        max-width: 95%;
+        width: 97%;
+        margin: auto;
+    }
+    .accordian li label{
+        width: inherit;
+        font-size: 20px;
+        height: 4rem;
+    }
+    .accordian input[type="radio"]:checked + label + .con{
+        padding: 20px 20px;
+    }
+    .accordian .con p{
+        font-size: 15px;
+    }
+    .sign-in{
+        margin: 5% auto;
+    }
+    .sign-in p{
+        font-size: 17px;
+    }
+
+    .help{
+        grid-template-columns: auto;
+    }
+    .sign-in .email-sign input{
+        width: 75%;
+    }
+}
