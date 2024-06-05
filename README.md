@@ -1,5 +1,4 @@
 
-
 # Netflix Clone
 
 ![Netflix Clone](path-to-your-logo-image)
