@@ -42,5 +42,5 @@ Contributions are what make the open-source community such an amazing place to l
 5. Open a Pull Request
 
 ## Task Preview
-
+[Netflix-Clone Video.zip](https://github.com/user-attachments/files/15585202/Netflix-Clone.Video.zip)
 
