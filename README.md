@@ -44,3 +44,7 @@ Contributions are what make the open-source community such an amazing place to l
 ## Task Preview
 [Netflix-Clone Video.zip](https://github.com/user-attachments/files/15585202/Netflix-Clone.Video.zip)
 
+## Contact
+
+For any inquiries, please reach out to [Sneha Khandar](https://github.com/Sneha-Khandar).
+
