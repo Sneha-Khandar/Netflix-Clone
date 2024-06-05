@@ -1,8 +1,6 @@
 
 # Netflix Clone
 
-![Netflix Clone](path-to-your-logo-image)
-
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
